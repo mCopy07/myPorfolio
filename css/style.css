@@ -1,0 +1,493 @@
+title{
+color:#001C30;
+color:#176B87;
+color:#64CCC5;
+color:#DAFFFB;
+}
+.sidebar_menu{
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #DAFFFB;
+    padding: 10px;
+    justify-content: space-around;
+    z-index: 9999;
+}
+.logo{
+    margin: 10px;
+}
+.logo a{
+    color: #001C30;
+    text-decoration: none;
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.buttons li a{
+    text-decoration: none;
+    color: #001C30;
+}
+.buttons:hover :not(a:hover){
+    color: #64CCC5;
+}
+
+.buttons li a:hover{
+    color: #001C30;
+}
+.linked_in a{
+    color: #DAFFFB;
+    border: none;
+    background-color: #64CCC5;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.linked_in i{
+    margin: 5px;
+    align-items: center;
+}
+
+.content{
+    min-height: 100vh;
+    background-color: #DAFFFB;
+    display: flex;             
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.myPhoto img{
+    position: absolute;
+    height: 40rem;
+    bottom: 1px;
+    right: 170px;
+}
+.intro{
+    color: #001C30;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+.intro h2, .intro h1{
+    margin: 0 10px;
+}
+.intro h1{
+    font-size: 3.5rem;
+}
+.intro .animated-text{
+    font-size: 2.5rem;
+}
+.aboutMeImgTxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 10px;
+}
+
+.introMsg h3{
+    padding: 10px;
+    padding-top: 40px;
+    width: 650px;
+    text-align: start;
+    color: #001C30;
+} 
+.socialMedias a{
+    padding: 10px;
+    text-decoration: none;
+}
+.socialMedias a i{
+    color: #001C30;
+    font-size: 2rem;
+}
+.socialMedias a i:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+	position: static;
+}
+.socialMedias .fb:hover{
+    color: #316FF6;
+    -webkit-background-clip: text;
+    background-clip: text; 
+    transition: 0.3s ease;
+}
+.socialMedias .ig:hover {
+    background: linear-gradient(12deg, rgba(255, 220, 125, 1) 0%, rgba(246, 130, 62, 1) 12%, rgba(202, 55, 148, 1) 34%, rgba(114, 50, 189, 1) 71%, rgba(76, 95, 215, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
+    transition: 0.3s ease;
+}
+
+.socialMedias .gh:hover{
+    color: #000000;
+    -webkit-background-clip: text;
+    background-clip: text; 
+    transition: 0.3s ease;
+}
+
+
+.introMsg .aboutMeBtn{
+    margin: 10px;
+    font-size: 1.1rem;
+    background-color: #DAFFFB;
+    color: #64CCC5;
+    border: 2px solid #64CCC5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.introMsg .aboutMeBtn:hover{
+    background: #64CCC5;
+    color: #DAFFFB;
+}
+/* second section */
+/* .aboutMe{
+    text-align: center;    
+    background-color: #64CCC5;
+}
+
+.aboutMe h1{
+    font-size: 2.5rem;
+    color: #DAFFFB;
+}
+.aboutMeImgTxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 10px;
+}
+.aboutMeImg img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.aboutMeTxt h3{
+    border-radius: 15px;
+    width: 500px;
+    padding: 40px;
+    background-color: #DAFFFB;
+    text-align: justify;
+    color: #001C30;
+} 
+.aboutMeTxt .aboutMeBtn{
+    margin-top: -10px;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #64CCC5;
+    color: #DAFFFB;
+    border: 2px solid #DAFFFB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.aboutMeTxt .aboutMeBtn:hover{
+    background: #DAFFFB;
+    color: #64CCC5;
+} */
+/* Third section */
+
+.mySkills{
+    min-height: 100vh;
+    text-align: center;    
+    background-color: hsl(0, 0%, 100%);  
+    align-items: center;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.mySkills h1{
+    padding-top: 50px;
+    font-size: 2.5rem;
+    color: #001C30;
+}
+.skillsCards{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.skillsCards .title{
+    width: 320px;
+    height: 420px;
+    box-shadow: 0px 7px 21px 4px rgb(0, 28, 48, 0.2);
+    border-radius: 10px;
+    background-color: #FFF;
+}
+.skillsCards .title .skillsLogo{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.skillsCards .title .moreDetailsSkills{
+    text-align: right;
+    padding: 135px 20px;
+}
+.skillsCards .title .moreDetailsSkills a{
+    color: #001C30;
+    text-decoration: none;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgba(23, 107, 135, 0.2); 
+    padding: 5px;
+    border-radius: 5px;
+}
+.skillsCards .title .moreDetailsSkills a i{
+
+    padding-left: 8px;
+    font-size: 0.8rem;
+}
+.skillsCards .title:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+	position: static;
+}
+.skillsCards .title h2{
+    padding: 15px;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: #64CCC5;
+    color: #DAFFFB;
+    border-radius: 10px 10px 0px 0px;
+}
+.skillsCards .title img{
+    width: 15%;
+}
+
+
+
+
+
+.myPortfolio {
+    background-color: #176B87;  
+    min-height: 100vh;
+    text-align: center;    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    
+}
+
+.myPortfolio h1 {
+    padding-top: 30px;
+    font-size: 2.5rem;
+    color: #DAFFFB;
+}
+
+.portfolioCards {
+    /* display: grid;
+    grid-template-columns: repeat(3, 450px);
+    gap: 16px;
+    justify-content: center; */
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+.portfolioCards .title {
+    width: 450px;
+    height: 450px;
+    box-shadow: 0px 7px 21px 4px rgb(0, 28, 48, 0.2);
+    border-radius: 10px;
+    background-color: #FFF;
+    transition: transform 0.3s ease;
+}
+.portfolioCards .title h4 {
+    color: #001C30;
+}
+
+.portfolioCards .title img {
+    padding: 5px;
+    object-fit: cover;     /* or cover, contain, etc. */
+    width: 98%;          /* fill the width of the card */
+    height: 50%;         /* required for object-fit to work */
+    border-radius: 10px 10px 0 0; /* optional: round top corners */
+}
+
+.portfolioCards .title .btn {
+    display: flex;
+   justify-content: space-between;
+   margin: 10px;
+}
+
+.portfolioCards .title .btn .link{
+    align-items: center;
+    text-decoration: none;
+    color: #001C30;
+    background-color: rgba(23, 107, 135, 0.2); 
+    padding: 5px;
+    border-radius: 5px;
+}
+.portfolioCards .title .btn .link i{
+
+    padding-left: 8px;
+    font-size: 0.8rem;
+}
+.portfolioCards .title .btn .live{
+    align-items: center;
+    text-decoration: none;
+    color: #176B87;
+    padding: 5px;
+    border-radius: 5px;
+}
+.portfolioCards .title .btn .live i{
+    padding-left: 8px;
+    font-size: 0.8rem;
+}
+.portfolioCards .title .projectName{
+    text-align: left;
+    padding-left:15px; 
+    padding-right:15px; 
+    padding-bottom:15px; 
+}
+.portfolioCards .title .projectName p{
+    text-align: justify; 
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+.animated-text span{
+    position: relative;
+}
+.animated-text span::before{
+    content: "Front-End Developer";
+    color: #176B87;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #DAFFFB;
+    border-left: 3px solid #176B87;
+    right: -8px;
+    bottom: -3px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #DAFFFB;
+    }
+}
+
+@keyframes words {
+    0%,25%{
+        content: "Front-End Developer";
+    }
+    26%,45%{
+        content: "UI/UX Designer";
+    }
+    46%,65%{
+        content: "Digital Artist";
+    }
+    66%,85%{
+        content: "Charcoal Artist";
+    }
+    86%,100%{
+        content: "Mural Artist";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container */
+.switch {
+  position: fixed;
+  top: 20px;         /* Distance from top of screen */
+  right: 20px;       /* Distance from right edge */
+  width: 60px;
+  height: 34px;
+  z-index: 9999;     /* Makes sure it's above all other elements */
+}
+
+/* Hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #64CCC5;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  border: 2px solid #001C30;
+}
+
+/* The circle inside the slider */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* When the checkbox is checked */
+.switch input:checked + .slider {
+  background-color: #001C30;
+  border: 2px solid #DAFFFB;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(26px);
+}
