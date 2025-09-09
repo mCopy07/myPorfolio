@@ -210,93 +210,8 @@ header{
     background-clip: text; 
     transform: translateY(-10%);
 }
-@media (max-width: 1535px){
-    header{
-        padding: 15px 3%;
-        transition: .2s;
-    }
-    .socialMedias{
-        padding: 0 3%;
-        transition: .2s;
-    }
-}
-@media (max-width: 1460px){
-    section{
-        padding: 0 12%;
-        transition: .2s;
-    }
-}
-@media (max-width: 1340px){
-    section{
-        padding: 0 12%;
-        transition: .2s;
-    }
-    .intro-text h1{
-        font-size: 35px;
-    }
-    .intro-text h5{
-        margin-bottom: 25px;
-    }
-}
-@media (max-width: 1195px){
-    section{
-        padding: 0 3%;
-        transition: .2s;
-    }
-    .intro-text{
-        padding-top: 115px;
-    }
-    .myPhoto-img{
-        width: 560px;
-        height: auto;
-    }
-    .myPhoto-img img{
-        margin-bottom: 25px;
-        width: 500px;
-    }
-    .content{
-        height: 100%;
-        gap: 1rem;
-        grid-template-columns: 1fr;
-    }
-    .socialMedias{
-        display: none;
-    }
-}
-@media (max-width: 990px){
-    #menu-icon{
-        display: block;
-    }
-    .navlist{
-        position: absolute;
-        top: 10%;
-        right: -100%;
-        width: 300px;
-        height: 40vh;
-        background: #176B87;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 50px 20px;
-        transition: all .55s ease;
-        z-index: 9999;  
-    }
-    .navlist a{
-        margin-left: 0;
-        display: block;
-        margin: 7px 0;
-        color: #DAFFFB;
-    }
-    .navlist.open{
-        right: 0;
-    }
-}
-@media (max-width: 80px){
-   .myPhoto-img img{
-        width: 100%;
-        height: auto;
-    }
-}
+
+
 /* 
 
 .intro{
@@ -897,4 +812,151 @@ section{
 
 .switch input:checked + .slider::before {
   transform: translateX(26px);
+}
+
+
+
+
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .socialMedias{
+        padding: 0 3%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1340px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+    .intro-text h1{
+        font-size: 35px;
+    }
+    .intro-text h5{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .intro-text{
+        padding-top: 115px;
+    }
+    .myPhoto-img{
+        width: 560px;
+        height: auto;
+    }
+    .myPhoto-img img{
+        margin-bottom: 25px;
+        width: 500px;
+    }
+    .content{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .socialMedias{
+        display: none;
+    }
+}
+@media (max-width: 990px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 1%;
+        right: -100%;
+        width: 300px;
+        height: 50vh;
+        background: #176B87;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 0px;
+        transition: all .55s ease;
+        z-index: 9999;  
+        gap: 30px;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 9px 0;
+        color: #DAFFFB;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media (max-width: 680px){
+   .myPhoto-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 376px) {
+    section{
+        padding-right: 600px;
+    }
+    .myPhoto-img img {
+        width: 50%;
+        height: auto;
+        margin-top: -150px;
+        margin-bottom: -10px;
+        margin-left: 110px;
+    }
+
+    .intro-text {
+        width: 400px;
+        margin-top: 10px;
+        margin-left: 90px;
+        text-align: justify;
+    }
+
+    .intro-text h1 {
+        font-size: 26px;
+        margin: 0 0 20px;
+        margin-left: 0;
+    }
+
+    .intro-text h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .intro-text p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .mySkills h1{
+        padding-left: 135px;
+        font-size: 2rem;
+    }
+    .skillsCards{
+        padding-left: 115px;
+    }
+    .myPortfolio h1{
+        padding-left: 560px;
+        color: #001C30;
+        font-size: 2rem;
+    }
+    .portfolioCards{
+        padding-left: 560px;
+    }
 }
