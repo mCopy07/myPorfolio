@@ -1,10 +1,20 @@
+
 title{
 color:#001C30;
 color:#176B87;
 color:#64CCC5;
 color:#DAFFFB;
+
 }
-.sidebar_menu{
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "poppins-bold", sans-serif;
+}
+/* .sidebar_menu{
     min-width: 100vw;
     position: fixed;
     top: 0;
@@ -16,14 +26,6 @@ color:#DAFFFB;
     padding: 10px;
     justify-content: space-around;
     z-index: 9999;
-}
-.logo{
-    margin: 10px;
-}
-.logo a{
-    color: #001C30;
-    text-decoration: none;
-    font-size: 20px;
 }
 .buttons{
     display: flex;
@@ -52,23 +54,251 @@ color:#DAFFFB;
 .linked_in i{
     margin: 5px;
     align-items: center;
+} */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #DAFFFB;
+    padding: 33px 9%;
+    justify-content: space-between;
+    z-index: 1000;
 }
+.logo{
+    margin: 10px;
+    color: #001C30;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: #001C30;
+    margin-left: 60px;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist:hover :not(a:hover){
+    color: #64CCC5;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid  #001C30;
+    color: #001C30;
+}
+
+#menu-icon{
+    color: #64CCC5;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content{
+    height: 100%;
+    width: 100%;
     min-height: 100vh;
     background-color: #DAFFFB;
-    display: flex;             
-    justify-content: center;
+    position: relative;
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);           
     align-items: center;
-    box-sizing: border-box;
+    gap: 2rem;
+}
+/* section{
+    padding: 0 19%;
+} */
+.myPhoto-img img{
+    padding-top: 100px;
+    width: 500px;
+    height: auto;
+}
+.intro-text{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.intro-text h1{
+    margin-left: 100px;
+    font-size: 40px;
+    line-height: 1;
+    color: #001C30;
+    margin: 0 0 45px;
+}
+.intro-text h4{
+    font-size: 30px;
+    font-weight: 600;
+    color: #001C30;
+    margin-bottom: 10px;
+}
+.intro-text p{
+    font-size: 20px;
+     line-height: 1.5;
+    color: #001C30;
+    margin-bottom: 40px;
 }
 
-.myPhoto img{
+
+
+
+
+
+
+.socialMedias{
     position: absolute;
-    height: 40rem;
-    bottom: 1px;
-    right: 170px;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-30%);
 }
+.socialMedias i{
+    align-items: center;
+    display: block;
+    margin: 26px 0;
+    font-size: 30px;
+    color: #001C30;
+    transition: all .50s ease;
+
+}
+.socialMedias .fb:hover{
+    color: #316FF6;
+    -webkit-background-clip: text;
+    background-clip: text; 
+    transform: translateY(-10%);
+}
+.socialMedias .ig:hover {
+    background: linear-gradient(12deg, rgba(255, 220, 125, 1) 0%, rgba(246, 130, 62, 1) 12%, rgba(202, 55, 148, 1) 34%, rgba(114, 50, 189, 1) 71%, rgba(76, 95, 215, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
+    transform: translateY(-10%);
+}
+
+.socialMedias .gh:hover{
+    color: #000000;
+    -webkit-background-clip: text;
+    background-clip: text; 
+    transform: translateY(-10%);
+}
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .socialMedias{
+        padding: 0 3%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1340px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+    .intro-text h1{
+        font-size: 35px;
+    }
+    .intro-text h5{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .intro-text{
+        padding-top: 115px;
+    }
+    .myPhoto-img{
+        width: 560px;
+        height: auto;
+    }
+    .myPhoto-img img{
+        margin-bottom: 25px;
+        width: 500px;
+    }
+    .content{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .socialMedias{
+        display: none;
+    }
+}
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 10%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: #176B87;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+        z-index: 9999;  
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+        color: #DAFFFB;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media (max-width: 80px){
+   .myPhoto-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+/* 
+
 .intro{
     color: #001C30;
     position: absolute;
@@ -85,12 +315,20 @@ color:#DAFFFB;
     font-size: 2.5rem;
 }
 .aboutMeImgTxt{
+    color: #001C30;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
-    padding-bottom: 10px;
+    margin-bottom: 40px;
 }
+.myPhoto img{
+    position: absolute;
+    width: 500px;
+    bottom: 1px;
+    right: 170px;
+}
+
 
 .introMsg h3{
     padding: 10px;
@@ -147,7 +385,162 @@ color:#DAFFFB;
 .introMsg .aboutMeBtn:hover{
     background: #64CCC5;
     color: #DAFFFB;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.content{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #DAFFFB;
+    position: relative;
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);           
+    align-items: center;
+    gap: 2rem;
 }
+section{
+    padding: 0 19%;
+}
+
+.intro{
+    color: #001C30;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+.intro h2, .intro h1{
+    margin: 0 10px;
+}
+.intro h1{
+    font-size: 3.5rem;
+}
+.intro .animated-text{
+    font-size: 2.5rem;
+}
+.aboutMeImgTxt{
+    color: #001C30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+.myPhoto img{
+    position: absolute;
+    width: 500px;
+    bottom: 1px;
+    right: 170px;
+}
+
+
+.introMsg h3{
+    padding: 10px;
+    padding-top: 40px;
+    width: 650px;
+    text-align: start;
+    color: #001C30;
+} 
+.socialMedias a{
+    padding: 10px;
+    text-decoration: none;
+}
+.socialMedias a i{
+    color: #001C30;
+    font-size: 2rem;
+}
+.socialMedias a i:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+	position: static;
+}
+.socialMedias .fb:hover{
+    color: #316FF6;
+    -webkit-background-clip: text;
+    background-clip: text; 
+    transition: 0.3s ease;
+}
+.socialMedias .ig:hover {
+    background: linear-gradient(12deg, rgba(255, 220, 125, 1) 0%, rgba(246, 130, 62, 1) 12%, rgba(202, 55, 148, 1) 34%, rgba(114, 50, 189, 1) 71%, rgba(76, 95, 215, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
+    transition: 0.3s ease;
+}
+
+.socialMedias .gh:hover{
+    color: #000000;
+    -webkit-background-clip: text;
+    background-clip: text; 
+    transition: 0.3s ease;
+}
+
+
+.introMsg .aboutMeBtn{
+    margin: 10px;
+    font-size: 1.1rem;
+    background-color: #DAFFFB;
+    color: #64CCC5;
+    border: 2px solid #64CCC5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.introMsg .aboutMeBtn:hover{
+    background: #64CCC5;
+    color: #DAFFFB;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* second section */
 /* .aboutMe{
     text-align: center;    
@@ -195,17 +588,21 @@ color:#DAFFFB;
 } */
 /* Third section */
 
+
 .mySkills{
+    height: 100%;
+    width: 100%;
     min-height: 100vh;
-    text-align: center;    
     background-color: hsl(0, 0%, 100%);  
+    display: grid;  
     align-items: center;
-    padding-bottom: 30px;
-    box-sizing: border-box;
+    gap: 2rem;
+    padding-bottom: 50px;
 }
 
 .mySkills h1{
-    padding-top: 50px;
+    text-align: center;  
+    margin: 50px;
     font-size: 2.5rem;
     color: #001C30;
 }
@@ -233,7 +630,7 @@ color:#DAFFFB;
 }
 .skillsCards .title .moreDetailsSkills{
     text-align: right;
-    padding: 135px 20px;
+    padding: 155px 20px;
 }
 .skillsCards .title .moreDetailsSkills a{
     color: #001C30;
@@ -268,12 +665,21 @@ color:#DAFFFB;
 
 
 
+.mySkills{
+    
+    display: grid;  
+   
+}
+
 
 
 .myPortfolio {
     background-color: #176B87;  
+    height: 100%;
+    width: 100%;
     min-height: 100vh;
-    text-align: center;    
+    gap: 2rem;
+    
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -283,12 +689,12 @@ color:#DAFFFB;
     
 }
 
-.myPortfolio h1 {
-    padding-top: 30px;
+.myPortfolio h1{
+    text-align: center;  
+    margin: 50px;
     font-size: 2.5rem;
     color: #DAFFFB;
 }
-
 .portfolioCards {
     /* display: grid;
     grid-template-columns: repeat(3, 450px);
@@ -326,6 +732,7 @@ color:#DAFFFB;
     display: flex;
    justify-content: space-between;
    margin: 10px;
+   padding-top: 85px;
 }
 
 .portfolioCards .title .btn .link{

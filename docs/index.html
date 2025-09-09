@@ -10,32 +10,90 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- <header>
+        <div class="logo">
+            <a class="logo" href="">mCopy07</a>
+        </div>
+        <div>
+            <ul class="navlist">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+            </ul>
+        </div>
+        <div class="linked_in">
+            <a href="">
+                Linked In
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <div id="menu-icon">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-x close" style="display: none;"></i>
+        </div>
+
+    </header> -->
     <header>
-        <div class="sidebar_menu">
-            <div class="logo">
-                <a class="logos" href="">mCopy07</a>
-            </div>
-            <div>
-                <ul class="buttons">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                </ul>
-            </div>
-            <div class="linked_in">
-                    <a href="">
-                        Linked In
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-            </div>
+        <div class="logo">
+            <a class="logo" href="">mCopy07</a>
+        </div>
+        
+        <ul class="navlist">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+        </ul>
+
+        <div id="menu-icon">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close" style="display: none;"></i>
         </div>
     </header>
-    <section id="home">
+
+    <section id="home" class="content">
+        <div class="intro-text">
+            <h4>hellow there,</h4>
+            <h1>I'm RONALD JR. MACOPIA </h1>
+            <!-- <h2 class="animated-text">
+                a <span></span>
+            </h2> -->
+            <p>
+                I am a Front-End Developer who enjoys creating 
+                good-looking and easy-to-use websites. I understand 
+                both front-end and back-end development, and I’m 
+                excited to use my skills in a real work environment. 
+            </p>
+            <!-- <div class="socialMedias">
+                <a href="https://www.facebook.com/ronald.macopia.9">
+                    <i class="fb fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="ig fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/mCopy07">
+                    <i class="gh fa-brands fa-github"></i>
+                </a>
+            </div> -->
+        </div>
+        <div class="myPhoto-img">
+            <img src="photos/myself3.png" alt="My Photo 1">
+        </div>
+    </section>
+    <div class="socialMedias">
+        <a href="https://www.facebook.com/ronald.macopia.9">
+            <i class="fb fa-brands fa-facebook"></i>
+        </a>
+        <a href="">
+            <i class="ig fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://github.com/mCopy07">
+            <i class="gh fa-brands fa-github"></i>
+        </a>
+    </div>
+    <!-- <section id="home">
         <div class="content">
-            <div class="myPhoto">
-                <img src="photos/myself3.png" alt="My Photo 1">
-            </div>
             <div class="intro">
                 <h2>hellow there,</h2>
                 <h1>I'm RONALD JR. MACOPIA </h1>
@@ -63,10 +121,11 @@
                     </div>
                 </div>
             </div>
+            <div class="myPhoto">
+                <img src="photos/myself3.png" alt="My Photo 1">
+            </div>
         </div>
-
-    </section>
-    
+    </section> -->
     <!-- <section id="about">
         <div class="aboutMe">
             <h1>ABOUT ME</h1>
@@ -91,7 +150,7 @@
         </div>
     </section> -->
     
-    <section id="skills">
+    <section>
         <div class="mySkills">
             <h1>
                 My Skills
@@ -194,7 +253,7 @@
         </div>
     </section>
 
-    <section id="portfolio">
+    <section>
         <div class="myPortfolio">
             <h1>
                 My Projects
@@ -250,79 +309,25 @@
         </div>
     </section>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-
-
-
-
-
-
 <script>
-  const toggle = document.getElementById("modeToggle");
+    const menuIcon = document.querySelector('#menu-icon');
+    const openIcon = menuIcon.querySelector('.open');
+    const closeIcon = menuIcon.querySelector('.close');
+    const navlist = document.querySelector('.navlist');
 
-  function setSidebarColors(isChecked) {
-  const sidebarMenu = document.querySelector(".sidebar_menu");
-  const animatedText = document.querySelector(".animated-text span::after");
-  const intro = document.querySelector(".intro");
-  const logoLink = document.querySelector(".logo a");          // Correct selector for logo link
-  const buttonLinks = document.querySelectorAll(".buttons li a"); // Select all buttons' links
+    menuIcon.onclick = () => {
+        navlist.classList.toggle('open');
 
-  if (sidebarMenu) {
-    sidebarMenu.style.backgroundColor = isChecked ? "#001C30" : "#DAFFFB";
-  }
-  if (intro) {
-    intro.style.color = isChecked ? "#DAFFFB" : "#001C30";
-  }
-
-if (animatedText) {
-    animatedText.style.backgroundColor = isChecked ? "#DAFFFB" : "#001C30";
-  }
-
-  if (logoLink) {
-    logoLink.style.color = isChecked ? "#DAFFFB" : "#001C30";   // Text color for logo link
-  }
-
-  if (buttonLinks.length) {
-    buttonLinks.forEach(link => {
-      link.style.color = isChecked ? "#DAFFFB" : "#001C30";    // Text color for each button link
-    });
-  }
-}
-
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggleState = localStorage.getItem("toggleState") === "on";
-
-    toggle.checked = toggleState;
-
-    document.body.style.backgroundColor = toggleState ? "#001C30" : "#DAFFFB";
-    setSidebarColors(toggleState);
-
-    toggle.addEventListener("change", function () {
-      if (this.checked) {
-        localStorage.setItem("toggleState", "on");
-        document.body.style.backgroundColor = "#001C30";
-        setSidebarColors(true);
-      } else {
-        localStorage.setItem("toggleState", "off");
-        document.body.style.backgroundColor = "#DAFFFB";
-        setSidebarColors(false);
-      }
-    });
-  });
+        // Toggle icon visibility
+        if (navlist.classList.contains('open')) {
+            openIcon.style.display = 'none';
+            closeIcon.style.display = 'inline';
+        } else {
+            openIcon.style.display = 'inline';
+            closeIcon.style.display = 'none';
+        }
+    };
 </script>
- -->
 
 </html>
 
