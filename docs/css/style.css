@@ -909,7 +909,131 @@ section{
         height: auto;
     }
 }
-@media (max-width: 376px) {
+
+
+
+@media (max-width: 590px) {
+    section{
+        padding-right: 700px;
+    }
+    .myPhoto-img img {
+        width: 60%;
+        height: auto;
+        margin-top: -150px;
+        margin-bottom: -10px;
+        margin-left: 110px;
+    }
+
+    .intro-text {
+        width: 400px;
+        margin-top: 10px;
+        margin-left: 90px;
+        text-align: justify;
+    }
+
+    .intro-text h1 {
+        font-size: 26px;
+        margin: 0 0 20px;
+        margin-left: 0;
+    }
+
+    .intro-text h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .intro-text p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .mySkills h1{
+        padding-left: 135px;
+        font-size: 2rem;
+    }
+    .skillsCards{
+        padding-left: 115px;
+    }
+    .myPortfolio h1{
+        padding-left: 560px;
+        color: #001C30;
+        font-size: 2rem;
+    }
+    .portfolioCards{
+        padding-left: 560px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 490px) {
+    section{
+        padding-right: 700px;
+    }
+    .myPhoto-img img {
+        width: 60%;
+        height: auto;
+        margin-top: -150px;
+        margin-bottom: -10px;
+        margin-left: 150px;
+    }
+
+    .intro-text {
+        width: 400px;
+        margin-top: 10px;
+        margin-left: 140px;
+        text-align: justify;
+    }
+
+    .intro-text h1 {
+        font-size: 26px;
+        margin: 0 0 20px;
+        margin-left: 0;
+    }
+
+    .intro-text h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .intro-text p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .mySkills h1{
+        padding-left: 190px;
+        font-size: 2rem;
+    }
+    .skillsCards{
+        padding-left: 190px;
+    }
+    .myPortfolio h1{
+        padding-left: 700px;
+        color: #001C30;
+        font-size: 2rem;
+    }
+    .portfolioCards{
+        padding-left: 700px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 390px) {
     section{
         padding-right: 600px;
     }
