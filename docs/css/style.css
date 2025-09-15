@@ -658,11 +658,6 @@ section{
     padding: 5px;
     border-radius: 5px;
 }
-.portfolioCards .title .btn .link i{
-
-    padding-left: 8px;
-    font-size: 0.8rem;
-}
 .portfolioCards .title .btn .live{
     align-items: center;
     text-decoration: none;
@@ -829,11 +824,56 @@ section{
 }
 @media (max-width: 1460px){
     section{
-        padding: 0 12%;
         transition: .2s;
     }
+
 }
-@media (max-width: 1340px){
+@media (max-width: 1360px){
+    
+    .intro-text {
+        width: 500px;
+        margin-left: 130px;
+    }
+
+    .intro-text h1 {
+        margin: 0 0 20px;
+        margin-left: 0;
+    }
+
+    .intro-text h4 {
+        margin-bottom: 10px;
+    }
+
+    .intro-text p {
+        margin-bottom: 30px;
+    }
+
+
+}
+@media (max-width: 1240px){
+    .myPhoto-img img{
+        margin-bottom: 25px;
+        width: 400px;
+    }
+    .intro-text {
+        width: 500px;
+        margin-left: 10px;
+    }
+
+    .intro-text h1 {
+        margin: 0 0 20px;
+        margin-left: 0;
+    }
+
+    .intro-text h4 {
+        margin-bottom: 10px;
+    }
+
+    .intro-text p {
+        margin-bottom: 30px;
+    }
+
+
     section{
         padding: 0 12%;
         transition: .2s;
@@ -844,9 +884,79 @@ section{
     .intro-text h5{
         margin-bottom: 25px;
     }
+
+
+
+
+
+    .mySkills h1{
+        padding-left: 50px;
+    }
+    .skillsCards{
+        padding-left: 50px;
+    }
+    .myPortfolio h1{
+        padding-left: 20px;
+        color: #001C30;
+    }
+    .portfolioCards{
+        padding-left: 20px;
+    }
 }
-@media (max-width: 1195px){
-    section{
+
+
+
+
+
+
+@media (max-width: 1230px){
+    .content{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .myPhoto-img img{
+        margin-top: -259px;
+        width: 500px;
+        margin-left: 250px;
+    }
+    .intro-text {
+        width: 700px;
+        margin-top: 10px;
+        margin-left: 200px;
+        text-align: justify;
+    }
+
+    .intro-text h1 {
+        margin: 0 0 20px;
+        margin-left: 0;
+    }
+
+    .intro-text h4 {
+        margin-bottom: 10px;
+    }
+
+    .intro-text p {
+        margin-bottom: 30px;
+    }
+
+    .mySkills h1{
+        padding-left: 50px;
+    }
+    .skillsCards{
+        padding-left: 50px;
+    }
+    .myPortfolio h1{
+        padding-left: 20px;
+        color: #001C30;
+    }
+    .portfolioCards{
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1220px){
+     section{
         padding: 0 3%;
         transition: .2s;
     }
@@ -870,11 +980,74 @@ section{
         display: none;
     }
 }
+
+
+@media (max-width: 1210px){
+     section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .intro-text{
+        padding-top: 115px;
+    }
+    .myPhoto-img{
+        width: 560px;
+        height: auto;
+    }
+    .myPhoto-img img{
+        margin-bottom: 25px;
+        width: 500px;
+    }
+    .content{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .socialMedias{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1195px){
+    
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .intro-text{
+        padding-top: 115px;
+    }
+    .myPhoto-img{
+        width: 560px;
+        height: auto;
+    }
+    .myPhoto-img img{
+        margin-bottom: 25px;
+        width: 500px;
+        margin-left: 195px;
+    }
+    .content{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .socialMedias{
+        display: none;
+    }
+    .intro-text {
+        margin-left: 120px;
+    }
+}
+
+
+
 @media (max-width: 990px){
     section{
         padding: 0 3%;
         transition: .2s;
     }
+    
     #menu-icon{
         display: block;
     }
@@ -902,13 +1075,73 @@ section{
     .navlist.open{
         right: 0;
     }
-}
-@media (max-width: 680px){
-   .myPhoto-img img{
-        width: 100%;
+
+
+    .intro-text{
+        width: 500px;
+    }
+    .myPhoto-img{
+        width: 560px;
         height: auto;
     }
+    .myPhoto-img img{
+        margin-bottom: 25px;
+        margin-left: 95px;
+    }
+    .content{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .socialMedias{
+        display: none;
+    }
+    .intro-text {
+        margin-left: 120px;
+    }
 }
+
+
+@media (max-width: 690px) {
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .intro-text{
+        width: 450px;
+        margin-left: 100px;
+    }
+    .intro-text h1 {
+        font-size: 26px;
+        margin: 0 0 20px;
+        margin-left: 0;
+    }
+
+    .intro-text h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .intro-text p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .myPhoto-img img{
+        width: 80%;
+        margin-left: 75px;
+    }
+    .content{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .socialMedias{
+        display: none;
+    }
+}
+
+
+
 
 
 
@@ -921,13 +1154,13 @@ section{
         height: auto;
         margin-top: -150px;
         margin-bottom: -10px;
-        margin-left: 110px;
+        margin-left: 150px;
     }
 
     .intro-text {
         width: 400px;
         margin-top: 10px;
-        margin-left: 90px;
+        margin-left: 140px;
         text-align: justify;
     }
 
@@ -948,19 +1181,19 @@ section{
     }
 
     .mySkills h1{
-        padding-left: 135px;
+        padding-left: 190px;
         font-size: 2rem;
     }
     .skillsCards{
-        padding-left: 115px;
+        padding-left: 190px;
     }
     .myPortfolio h1{
-        padding-left: 560px;
+        padding-left: 700px;
         color: #001C30;
         font-size: 2rem;
     }
     .portfolioCards{
-        padding-left: 560px;
+        padding-left: 700px;
     }
 }
 
